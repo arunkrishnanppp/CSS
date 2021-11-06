@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Segoe UI,system-ui,-apple-system,sans-serif;
+}
+body{
+      overflow-x: hidden;
+}
+.main{
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+/* background-color: chartreuse; */
+
+     display: flex;
+     /* justify-content: space-between; */
+
+}
+
+.sidebar{
+    /* flex: ;
+     */
+     min-width: 22rem;
+    background-color:white;
+position: sticky;
+ float:left;
+left: 0;
+top: 0;
+outline: 1px solid grey;
+max-height: 100vh;
+z-index: 10;
+}
+
+.main_content{
+width: 100%;
+}
+.sidebar_nav>*{
+    display: flex;
+    flex-direction: column;
+}
+
+.course_header{
+    height: 144px;
+background-image: url('./asset/Backgrounds_in_CSS.jpg');
+}
+.course_header_button[data-use-open-button]{
+    visibility: hidden;
+
+
+}
+.course_header_button{
+    display: inline-block;
+    background:transparent;
+    border: none;
+}
+
+
+
+@media (min-width:1200px) {
+body{
+    /* background: red; */
+}
+     .main_content{
+    margin-left: 22rem;
+}
+    body{
+        /* background-color: red; */
+    }
+header{
+    display: none;
+}
+#navbarButton{
+visibility: hidden;
+}
+  
+}
+@media (max-width:1200px) {
+    body{
+        /* background: red; */
+    }
+
+    .area_hidden{
+        display: none;
+    }
+    .main{
+        display: inline-block;
+    
+    }
+    .sidebar{
+        height: 100%;
+        position: relative;
+        z-index: 788;
+    }
+    .main_content{
+ 
+        margin-top: 80px;
+        width: 100%;
+        flex:1;
+              /* background-color: red; */
+        position:relative;
+            left: 0;
+  
+        left: 0;
+    }
+
+}
+header{
+    z-index: 999;
+    background: white;
+    /* border-bottom: 1px solid; */
+     /* -moz-box-shadow:    3px 3px 5px 6px #ccc; */
+  /* -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+  box-shadow:         0px 0px 5px 1px #ccc;
+    position: fixed;
+    top: 0;
+    max-height: 90px;
+    width: 100%;
+ 
+}
+.header_hide{
+    display: none;
+}
+#navbarButton{
+    position: absolute;
+    right:5px;
+    top:5px
+}
+.course_header_title{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+/* overlay */
+
+.overlay{
+ position: fixed; 
+  top: 0; right: 0; bottom: 0; left: 0;
+  overflow-x: scroll;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+     backdrop-filter: blur(3px);
+  z-index: 50;
+}
+
+.hidden{
+    display: none;
+}
+
+.tooltip__content{
+    visibility: hidden;
+}
+#openbutton {
+    background:transparent;
+    text-decoration: none;
+    border: none;
+    position: relative;
+   left: 10px;
+ top: 0px;
+ margin-right: 30px;
+}
+
+
+#openbutton:hover .tooltip__content{
+       visibility: visible;
+
+}
+
+.container{
+    padding: 30px;
+    margin-right: 10px;
+    /* margin: 30px; */
+    /* background: red; */
+    /* width: 100%;
+    height: 100%; */
+  
+}
+
+.sidebar{
+ 
+    /* overflow: hidden; */
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* content CSS */
+
+h1{
+    font-weight: 500;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+h2{
+    font-weight: 300;
+}
+h1 ~ h2{
+    position: relative;
+    left: 40px;
+}
+h1 ~ label{
+    position: relative;
+    left: 60px;
+}
+p{
+   overflow-wrap: break-word;
+}
+
+ li p{
+    position: relative;
+    left: 10px;
+  
+}
+ul{
+    list-style: none;
+}
+li h2{
+
+}

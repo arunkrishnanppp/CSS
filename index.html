@@ -1,0 +1,524 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="file.css" />
+    <script src="./page.js" defer></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header role="navigation" id="header">
+      <button
+        class="icon-button tooltip"
+        id="openbutton"
+        data-alignment="right"
+        data-open-drawer-button
+      >
+        <svg
+          aria-label="menu"
+          role="img"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+        <span class="tooltip__content">Open menu</span>
+      </button>
+      <svg
+        i
+        aria-label="Learn CSS!"
+        role="img"
+        height="40"
+        viewBox="0 0 256 80"
+        width="128"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        preserveAspectRatio="xMinYMid meet"
+      >
+        <path
+          d="M0 20h6.12v33.279h16.776v5.847H0V20zM39.76 60c-2.66 0-5.064-.62-7.213-1.858-2.113-1.239-3.771-2.95-4.973-5.137-1.202-2.222-1.803-4.699-1.803-7.431 0-2.623.564-5.028 1.694-7.213 1.165-2.223 2.786-3.971 4.863-5.246 2.076-1.312 4.444-1.968 7.104-1.968 2.732 0 5.1.602 7.104 1.804 2.04 1.202 3.588 2.878 4.644 5.027 1.057 2.113 1.585 4.554 1.585 7.322 0 .328-.018.656-.054.984-.037.328-.055.51-.055.547H31.782c.182 2.477 1.074 4.39 2.677 5.737 1.603 1.348 3.424 2.022 5.465 2.022 3.133 0 5.537-1.457 7.213-4.371l5.136 2.459a14.195 14.195 0 0 1-5.027 5.355C45.133 59.344 42.638 60 39.76 60zm6.885-17.76c-.073-.874-.364-1.766-.874-2.677-.51-.91-1.312-1.676-2.405-2.295-1.056-.656-2.386-.984-3.989-.984-1.785 0-3.333.547-4.645 1.64-1.275 1.092-2.149 2.531-2.623 4.316h14.536zM66.886 60c-1.931 0-3.68-.383-5.246-1.148-1.53-.801-2.75-1.894-3.661-3.278-.875-1.421-1.312-3.024-1.312-4.809 0-2.842 1.057-5.082 3.17-6.721 2.149-1.64 4.863-2.46 8.142-2.46 2.877 0 5.337.492 7.377 1.476v-1.147c0-1.64-.656-2.988-1.968-4.044-1.275-1.093-2.823-1.64-4.644-1.64-2.77 0-4.991 1.13-6.667 3.389l-4.59-3.17a12.728 12.728 0 0 1 4.754-3.934c1.93-.911 4.098-1.367 6.503-1.367 3.97 0 7.03 1.002 9.18 3.006 2.186 1.967 3.279 4.754 3.279 8.36v16.613h-5.847v-3.334h-.328a10.746 10.746 0 0 1-3.334 3.06c-1.347.766-2.95 1.148-4.808 1.148zm.983-4.973a7.267 7.267 0 0 0 3.716-.983c1.166-.692 2.077-1.585 2.732-2.678.693-1.13 1.039-2.331 1.039-3.606a12.67 12.67 0 0 0-6.175-1.585c-2.004 0-3.57.437-4.7 1.311-1.129.875-1.694 1.986-1.694 3.334 0 1.238.492 2.258 1.476 3.06 1.02.765 2.222 1.147 3.606 1.147zM87.549 32.022h5.683v4.044h.328c.582-1.385 1.639-2.532 3.169-3.443 1.53-.947 3.097-1.42 4.699-1.42 1.312 0 2.387.181 3.224.546v6.284c-1.238-.62-2.622-.93-4.153-.93-1.967 0-3.624.766-4.972 2.296-1.312 1.493-1.967 3.333-1.967 5.519v14.208h-6.011V32.022zM109.054 32.022h5.683v3.606h.328c.802-1.311 1.968-2.386 3.498-3.224a10.185 10.185 0 0 1 4.972-1.257c3.352 0 5.884.984 7.596 2.951 1.749 1.968 2.623 4.682 2.623 8.142v16.886h-6.011V43.06c0-4.262-1.986-6.393-5.956-6.393-2.004 0-3.625.801-4.864 2.404-1.238 1.603-1.858 3.497-1.858 5.683v14.372h-6.011V32.022z"
+          fill="#3C4043"
+        ></path>
+        <path
+          d="M165.7 60c-3.707 0-7.094-.873-10.16-2.62a19.205 19.205 0 0 1-7.166-7.166c-1.747-3.066-2.62-6.47-2.62-10.214 0-3.743.873-7.13 2.62-10.16 1.747-3.066 4.136-5.473 7.166-7.22 3.066-1.747 6.453-2.62 10.16-2.62 5.74 0 10.464 2.086 14.171 6.257l-4.224 4.117c-1.319-1.568-2.799-2.727-4.439-3.476-1.604-.784-3.44-1.176-5.508-1.176-2.566 0-4.919.588-7.058 1.765-2.104 1.176-3.779 2.852-5.027 5.026-1.212 2.14-1.818 4.635-1.818 7.487 0 2.852.606 5.365 1.818 7.54 1.248 2.14 2.923 3.797 5.027 4.973 2.139 1.177 4.492 1.765 7.058 1.765 4.278 0 7.915-1.782 10.909-5.347l4.332 4.17c-1.818 2.175-4.046 3.869-6.684 5.08C171.654 59.395 168.802 60 165.7 60z"
+          fill="url(#a_2w)"
+        ></path>
+        <path
+          d="M198.49 60c-3.173 0-6.025-.927-8.556-2.78-2.531-1.855-4.278-4.457-5.241-7.808l5.669-2.3c.57 2.104 1.568 3.833 2.994 5.188 1.462 1.319 3.209 1.978 5.241 1.978 1.889 0 3.494-.481 4.813-1.444 1.319-.998 1.978-2.353 1.978-4.064 0-1.569-.588-2.852-1.764-3.85-1.141-1.034-3.156-2.068-6.043-3.102l-2.407-.855c-2.566-.892-4.723-2.175-6.47-3.85-1.747-1.676-2.621-3.887-2.621-6.632 0-1.89.517-3.636 1.551-5.24 1.034-1.605 2.46-2.87 4.278-3.797 1.854-.963 3.94-1.444 6.257-1.444 3.351 0 6.025.82 8.021 2.46 1.997 1.604 3.334 3.422 4.011 5.454l-5.401 2.3c-.392-1.212-1.141-2.282-2.246-3.209s-2.531-1.39-4.278-1.39c-1.747 0-3.226.446-4.439 1.337-1.176.891-1.764 2.032-1.764 3.422 0 1.32.535 2.407 1.604 3.262 1.07.856 2.745 1.676 5.027 2.46l2.406.802c3.28 1.141 5.811 2.638 7.594 4.492 1.818 1.819 2.727 4.26 2.727 7.327 0 2.495-.642 4.599-1.925 6.31-1.283 1.675-2.923 2.923-4.92 3.743A15.654 15.654 0 0 1 198.49 60z"
+          fill="url(#b_2w)"
+        ></path>
+        <path
+          d="M229.145 60c-3.173 0-6.025-.927-8.557-2.78-2.531-1.855-4.278-4.457-5.24-7.808l5.668-2.3c.571 2.104 1.569 3.833 2.995 5.188 1.462 1.319 3.208 1.978 5.241 1.978 1.889 0 3.493-.481 4.812-1.444 1.319-.998 1.979-2.353 1.979-4.064 0-1.569-.588-2.852-1.765-3.85-1.141-1.034-3.155-2.068-6.043-3.102l-2.406-.855c-2.567-.892-4.724-2.175-6.471-3.85-1.746-1.676-2.62-3.887-2.62-6.632 0-1.89.517-3.636 1.551-5.24 1.034-1.605 2.46-2.87 4.278-3.797 1.854-.963 3.939-1.444 6.257-1.444 3.351 0 6.025.82 8.021 2.46 1.997 1.604 3.333 3.422 4.011 5.454l-5.401 2.3c-.392-1.212-1.141-2.282-2.246-3.209s-2.531-1.39-4.278-1.39c-1.747 0-3.227.446-4.439 1.337-1.176.891-1.765 2.032-1.765 3.422 0 1.32.535 2.407 1.605 3.262 1.069.856 2.745 1.676 5.026 2.46l2.407.802c3.28 1.141 5.811 2.638 7.593 4.492 1.819 1.819 2.728 4.26 2.728 7.327 0 2.495-.642 4.599-1.925 6.31-1.284 1.675-2.924 2.923-4.92 3.743a15.654 15.654 0 0 1-6.096 1.23z"
+          fill="url(#c_2w)"
+        ></path>
+        <path
+          d="M248.462 32.46V20.856h5.99V32.46l-.642 14.224h-4.759l-.589-14.224zm2.995 27.005c-1.141 0-2.121-.392-2.941-1.176-.785-.82-1.177-1.8-1.177-2.941 0-1.141.392-2.104 1.177-2.888.82-.784 1.8-1.177 2.941-1.177 1.141 0 2.103.393 2.888 1.177.784.784 1.176 1.747 1.176 2.888 0 1.14-.392 2.12-1.176 2.94-.785.785-1.747 1.177-2.888 1.177z"
+          fill="url(#d_2w)"
+        ></path>
+        <defs>
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="a_2w"
+            x1="145.754"
+            x2="258.916"
+            y1="60"
+            y2="36.016"
+          >
+            <stop offset=".068" stop-color="#93F"></stop>
+            <stop offset=".344" stop-color="#06F"></stop>
+            <stop offset=".62" stop-color="#39F"></stop>
+            <stop offset=".911" stop-color="#3C0"></stop>
+          </linearGradient>
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="b_2w"
+            x1="145.754"
+            x2="258.916"
+            y1="60"
+            y2="36.016"
+          >
+            <stop offset=".068" stop-color="#93F"></stop>
+            <stop offset=".344" stop-color="#06F"></stop>
+            <stop offset=".62" stop-color="#39F"></stop>
+            <stop offset=".911" stop-color="#3C0"></stop>
+          </linearGradient>
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="c_2w"
+            x1="145.754"
+            x2="258.916"
+            y1="60"
+            y2="36.016"
+          >
+            <stop offset=".068" stop-color="#93F"></stop>
+            <stop offset=".344" stop-color="#06F"></stop>
+            <stop offset=".62" stop-color="#39F"></stop>
+            <stop offset=".911" stop-color="#3C0"></stop>
+          </linearGradient>
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="d_2w"
+            x1="145.754"
+            x2="258.916"
+            y1="60"
+            y2="36.016"
+          >
+            <stop offset=".068" stop-color="#93F"></stop>
+            <stop offset=".344" stop-color="#06F"></stop>
+            <stop offset=".62" stop-color="#39F"></stop>
+            <stop offset=".911" stop-color="#3C0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </header>
+    <div class="main">
+      <div class="sidebar area_hidden" id="navBar">
+        <nav class="sidebar_nav">
+          <div class="course_header">
+            <button
+              id="navbarButton"
+              class="course_header_button"
+              data-position="right"
+              data-use-close-button
+            >
+              <svg
+                aria-label="close"
+                role="img"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                ></path>
+              </svg>
+            </button>
+            <div class="course_header_title">
+              <svg
+                aria-label="Learn CSS!"
+                role="img"
+                height="40"
+                viewBox="0 0 256 80"
+                width="128"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                preserveAspectRatio="xMinYMid meet"
+              >
+                <path
+                  d="M0 20h6.12v33.279h16.776v5.847H0V20zM39.76 60c-2.66 0-5.064-.62-7.213-1.858-2.113-1.239-3.771-2.95-4.973-5.137-1.202-2.222-1.803-4.699-1.803-7.431 0-2.623.564-5.028 1.694-7.213 1.165-2.223 2.786-3.971 4.863-5.246 2.076-1.312 4.444-1.968 7.104-1.968 2.732 0 5.1.602 7.104 1.804 2.04 1.202 3.588 2.878 4.644 5.027 1.057 2.113 1.585 4.554 1.585 7.322 0 .328-.018.656-.054.984-.037.328-.055.51-.055.547H31.782c.182 2.477 1.074 4.39 2.677 5.737 1.603 1.348 3.424 2.022 5.465 2.022 3.133 0 5.537-1.457 7.213-4.371l5.136 2.459a14.195 14.195 0 0 1-5.027 5.355C45.133 59.344 42.638 60 39.76 60zm6.885-17.76c-.073-.874-.364-1.766-.874-2.677-.51-.91-1.312-1.676-2.405-2.295-1.056-.656-2.386-.984-3.989-.984-1.785 0-3.333.547-4.645 1.64-1.275 1.092-2.149 2.531-2.623 4.316h14.536zM66.886 60c-1.931 0-3.68-.383-5.246-1.148-1.53-.801-2.75-1.894-3.661-3.278-.875-1.421-1.312-3.024-1.312-4.809 0-2.842 1.057-5.082 3.17-6.721 2.149-1.64 4.863-2.46 8.142-2.46 2.877 0 5.337.492 7.377 1.476v-1.147c0-1.64-.656-2.988-1.968-4.044-1.275-1.093-2.823-1.64-4.644-1.64-2.77 0-4.991 1.13-6.667 3.389l-4.59-3.17a12.728 12.728 0 0 1 4.754-3.934c1.93-.911 4.098-1.367 6.503-1.367 3.97 0 7.03 1.002 9.18 3.006 2.186 1.967 3.279 4.754 3.279 8.36v16.613h-5.847v-3.334h-.328a10.746 10.746 0 0 1-3.334 3.06c-1.347.766-2.95 1.148-4.808 1.148zm.983-4.973a7.267 7.267 0 0 0 3.716-.983c1.166-.692 2.077-1.585 2.732-2.678.693-1.13 1.039-2.331 1.039-3.606a12.67 12.67 0 0 0-6.175-1.585c-2.004 0-3.57.437-4.7 1.311-1.129.875-1.694 1.986-1.694 3.334 0 1.238.492 2.258 1.476 3.06 1.02.765 2.222 1.147 3.606 1.147zM87.549 32.022h5.683v4.044h.328c.582-1.385 1.639-2.532 3.169-3.443 1.53-.947 3.097-1.42 4.699-1.42 1.312 0 2.387.181 3.224.546v6.284c-1.238-.62-2.622-.93-4.153-.93-1.967 0-3.624.766-4.972 2.296-1.312 1.493-1.967 3.333-1.967 5.519v14.208h-6.011V32.022zM109.054 32.022h5.683v3.606h.328c.802-1.311 1.968-2.386 3.498-3.224a10.185 10.185 0 0 1 4.972-1.257c3.352 0 5.884.984 7.596 2.951 1.749 1.968 2.623 4.682 2.623 8.142v16.886h-6.011V43.06c0-4.262-1.986-6.393-5.956-6.393-2.004 0-3.625.801-4.864 2.404-1.238 1.603-1.858 3.497-1.858 5.683v14.372h-6.011V32.022z"
+                  fill="#3C4043"
+                ></path>
+                <path
+                  d="M165.7 60c-3.707 0-7.094-.873-10.16-2.62a19.205 19.205 0 0 1-7.166-7.166c-1.747-3.066-2.62-6.47-2.62-10.214 0-3.743.873-7.13 2.62-10.16 1.747-3.066 4.136-5.473 7.166-7.22 3.066-1.747 6.453-2.62 10.16-2.62 5.74 0 10.464 2.086 14.171 6.257l-4.224 4.117c-1.319-1.568-2.799-2.727-4.439-3.476-1.604-.784-3.44-1.176-5.508-1.176-2.566 0-4.919.588-7.058 1.765-2.104 1.176-3.779 2.852-5.027 5.026-1.212 2.14-1.818 4.635-1.818 7.487 0 2.852.606 5.365 1.818 7.54 1.248 2.14 2.923 3.797 5.027 4.973 2.139 1.177 4.492 1.765 7.058 1.765 4.278 0 7.915-1.782 10.909-5.347l4.332 4.17c-1.818 2.175-4.046 3.869-6.684 5.08C171.654 59.395 168.802 60 165.7 60z"
+                  fill="url(#a_2y)"
+                ></path>
+                <path
+                  d="M198.49 60c-3.173 0-6.025-.927-8.556-2.78-2.531-1.855-4.278-4.457-5.241-7.808l5.669-2.3c.57 2.104 1.568 3.833 2.994 5.188 1.462 1.319 3.209 1.978 5.241 1.978 1.889 0 3.494-.481 4.813-1.444 1.319-.998 1.978-2.353 1.978-4.064 0-1.569-.588-2.852-1.764-3.85-1.141-1.034-3.156-2.068-6.043-3.102l-2.407-.855c-2.566-.892-4.723-2.175-6.47-3.85-1.747-1.676-2.621-3.887-2.621-6.632 0-1.89.517-3.636 1.551-5.24 1.034-1.605 2.46-2.87 4.278-3.797 1.854-.963 3.94-1.444 6.257-1.444 3.351 0 6.025.82 8.021 2.46 1.997 1.604 3.334 3.422 4.011 5.454l-5.401 2.3c-.392-1.212-1.141-2.282-2.246-3.209s-2.531-1.39-4.278-1.39c-1.747 0-3.226.446-4.439 1.337-1.176.891-1.764 2.032-1.764 3.422 0 1.32.535 2.407 1.604 3.262 1.07.856 2.745 1.676 5.027 2.46l2.406.802c3.28 1.141 5.811 2.638 7.594 4.492 1.818 1.819 2.727 4.26 2.727 7.327 0 2.495-.642 4.599-1.925 6.31-1.283 1.675-2.923 2.923-4.92 3.743A15.654 15.654 0 0 1 198.49 60z"
+                  fill="url(#b_2y)"
+                ></path>
+                <path
+                  d="M229.145 60c-3.173 0-6.025-.927-8.557-2.78-2.531-1.855-4.278-4.457-5.24-7.808l5.668-2.3c.571 2.104 1.569 3.833 2.995 5.188 1.462 1.319 3.208 1.978 5.241 1.978 1.889 0 3.493-.481 4.812-1.444 1.319-.998 1.979-2.353 1.979-4.064 0-1.569-.588-2.852-1.765-3.85-1.141-1.034-3.155-2.068-6.043-3.102l-2.406-.855c-2.567-.892-4.724-2.175-6.471-3.85-1.746-1.676-2.62-3.887-2.62-6.632 0-1.89.517-3.636 1.551-5.24 1.034-1.605 2.46-2.87 4.278-3.797 1.854-.963 3.939-1.444 6.257-1.444 3.351 0 6.025.82 8.021 2.46 1.997 1.604 3.333 3.422 4.011 5.454l-5.401 2.3c-.392-1.212-1.141-2.282-2.246-3.209s-2.531-1.39-4.278-1.39c-1.747 0-3.227.446-4.439 1.337-1.176.891-1.765 2.032-1.765 3.422 0 1.32.535 2.407 1.605 3.262 1.069.856 2.745 1.676 5.026 2.46l2.407.802c3.28 1.141 5.811 2.638 7.593 4.492 1.819 1.819 2.728 4.26 2.728 7.327 0 2.495-.642 4.599-1.925 6.31-1.284 1.675-2.924 2.923-4.92 3.743a15.654 15.654 0 0 1-6.096 1.23z"
+                  fill="url(#c_2y)"
+                ></path>
+                <path
+                  d="M248.462 32.46V20.856h5.99V32.46l-.642 14.224h-4.759l-.589-14.224zm2.995 27.005c-1.141 0-2.121-.392-2.941-1.176-.785-.82-1.177-1.8-1.177-2.941 0-1.141.392-2.104 1.177-2.888.82-.784 1.8-1.177 2.941-1.177 1.141 0 2.103.393 2.888 1.177.784.784 1.176 1.747 1.176 2.888 0 1.14-.392 2.12-1.176 2.94-.785.785-1.747 1.177-2.888 1.177z"
+                  fill="url(#d_2y)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    gradientUnits="userSpaceOnUse"
+                    id="a_2y"
+                    x1="145.754"
+                    x2="258.916"
+                    y1="60"
+                    y2="36.016"
+                  >
+                    <stop offset=".068" stop-color="#93F"></stop>
+                    <stop offset=".344" stop-color="#06F"></stop>
+                    <stop offset=".62" stop-color="#39F"></stop>
+                    <stop offset=".911" stop-color="#3C0"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    gradientUnits="userSpaceOnUse"
+                    id="b_2y"
+                    x1="145.754"
+                    x2="258.916"
+                    y1="60"
+                    y2="36.016"
+                  >
+                    <stop offset=".068" stop-color="#93F"></stop>
+                    <stop offset=".344" stop-color="#06F"></stop>
+                    <stop offset=".62" stop-color="#39F"></stop>
+                    <stop offset=".911" stop-color="#3C0"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    gradientUnits="userSpaceOnUse"
+                    id="c_2y"
+                    x1="145.754"
+                    x2="258.916"
+                    y1="60"
+                    y2="36.016"
+                  >
+                    <stop offset=".068" stop-color="#93F"></stop>
+                    <stop offset=".344" stop-color="#06F"></stop>
+                    <stop offset=".62" stop-color="#39F"></stop>
+                    <stop offset=".911" stop-color="#3C0"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    gradientUnits="userSpaceOnUse"
+                    id="d_2y"
+                    x1="145.754"
+                    x2="258.916"
+                    y1="60"
+                    y2="36.016"
+                  >
+                    <stop offset=".068" stop-color="#93F"></stop>
+                    <stop offset=".344" stop-color="#06F"></stop>
+                    <stop offset=".62" stop-color="#39F"></stop>
+                    <stop offset=".911" stop-color="#3C0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main_content">
+        <div class="container">
+          <div class="boxmodel">
+            <h1>Box Model</h1>
+            <h2>Extrinsic vs Intrinsic</h2>
+            <label class="toggle" for="intrinsic_switch">
+              <h2 class="toggle_label">Turn on intrinsic</h2>
+              <input
+                type="checkbox"
+                role="switch"
+                class="toggle_element"
+                id="intrinsic_switch"
+              />
+              <div class="togle_decor" aria-hidden="true">
+                <div class="toggle_thumb"></div>
+              </div>
+            </label>
+            <p class="awsome" data-element="awsome">CSS IS AWSOMEEEE 12 3</p>
+            <p>
+              Intrincis is allowing the browser to controll the width and height
+            </p>
+          </div>
+          <div class="typeofbox">
+            <div>
+              <h1>Type Of Boxes</h1>
+              <div class="marginBox box">
+                <p class="text">margin</p>
+                <div class="boarderBox box">
+                  <div class="paddingBox box">
+                    <p class="text">Padding</p>
+                    <div class="contentBox box">
+                      <p class="text">Content</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ContentBox_Box">
+                <label class="toggle" for="contectBox_borderBox">
+                  <h2 class="toggle_label">Turn on for Border Box</h2>
+                  <input
+                    type="checkbox"
+                    role="switch"
+                    class="toggle_element"
+                    id="contectBox_borderBox"
+                  />
+                  <div class="togle_decor" aria-hidden="true">
+                    <div class="toggle_thumb"></div>
+                  </div>
+                </label>
+                <p>
+                  <strong> Context Box</strong> | Actual width and size on
+                  screen is width+padding+border+(margin)
+                  <span
+                    >Contents height and width will persist / will nbot
+                    change</span
+                  >
+                </p>
+                <p>
+                  <strong> Border Box</strong>| Actual size on screen is width
+                  or height + (margin)
+
+                  <span
+                    >Contents heoght and width will change based on padding
+                    border</span
+                  >
+                </p>
+                <div class="ContentBox_Box_inner" data-element="box"></div>
+              </div>
+            </div>
+          </div>
+          <div id="selectors">
+            <h1>CSS SELECTORS</h1>
+            <p>For selecting the first paragram, inside article element</p>
+            <p>article P:first-of-type{ color: red };</p>
+            <article>
+              <p>Hello</p>
+              <p>Hii</p>
+            </article>
+            <div>
+              <h1>Type Of selectors</h1>
+              <ul>
+                <li>
+                  <h2>Universal selectors</h2>
+                  <p>Used for selecting all elememnt in the web page</p>
+                  <p>
+                    will be having least priority other sleectors will shadow
+                    this
+                  </p>
+                </li>
+                <li>
+                  <h2>Type sleectors</h2>
+                  <p>
+                    Selection based on the type of html element like div,
+                    span,ul
+                  </p>
+                </li>
+                <li>
+                  <h2>Class selector</h2>
+                  <p>Selection using a class name iver to html elemnts</p>
+                </li>
+
+                <li>
+                  <h2>Id selector</h2>
+                  <p>select elemt with specified id in the html element</p>
+                </li>
+                <li>
+                  <h2>Attribute selector</h2>
+                  <p>
+                    Select an element that have a centain html attribute or a
+                    value for an html attribute
+                  </p>
+                  <span> div data-type="primary" div </span>
+                  <span>[data-type="primary"]{ color:white }</span>
+
+                  <div data-type="att">
+                    <p>P tag inside div with att value for data-type</p>
+                  </div>
+                  <div data-type="noaat">
+                    <p>P tag inside div with att value for data-type</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h1>Grouping Selectors</h1>
+            <ul>
+              <li>
+                <h3>Comma seperated</h3>
+                <p>
+                  Comma seperated slector wwill appli the styling to all the
+                  selctors
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1>Pseudo Classes</h1>
+            <p>
+              Html elemnts find them self in various states either the are
+              interacted with or one of there child element is in certain state
+            </p>
+
+            <div class="hover_outer">
+              <div class="hover_inner">Hover Inner Box</div>
+            </div>
+            <a>Text</a>
+          </div>
+          <div>
+            <h1>Pseudo Element</h1>
+            <p>
+              Pseudo element is diff from pseudo class insted of responsing to
+              state change , they act like inserting a new element with css
+            </p>
+            <p>Syntax is also dif for psudo element we use ::</p>
+
+            <div class="pseudo_element_outer">
+              <div class="pseudo_element_inner"></div>
+            </div>
+          </div>
+          <div class="complex">
+            <h1>Complex Selectors</h1>
+            <p>
+              WHile using combination of selec tors we can only cascade down to
+              child element we cant go up and selct parent element
+            </p>
+            <p>
+              WHile using combination of selec tors we can only cascade down to
+              child element we cant go up and selct parent element
+            </p>
+
+            <ul>
+              <li>
+                Decendendt Combinator
+                <p>
+                  if we want to selct child inside a parent we can user parent
+                  "space " child
+                  <strong
+                    >it will select all the child element with spcified id or
+                    class or type also cascade down to leaf of tre</strong
+                  >
+                </p>
+                <div class="top box">
+                  <div>
+                    <p>1 level deep</p>
+                    <div>
+                      <p>2 levels deep</p>
+                      <div>
+                        <p>3 levels deep</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h2>Diff between</h2>
+                  <img src="./assets/c1.JPG" />
+                  <div>
+                    <p>
+                      .cascade p -> will select all the p inside the class
+                      cascade, will cascade to leaf node
+                    </p>
+                    <p>
+                      .cascade> p will only select the direct p childrens of
+                      .cascade class, it wwill only go one level down the
+                      heirarchy
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h2>Next sibling selector +</h2>
+                <p>
+                  We can select the element which is immediatly folling our
+                  element using +
+                </p>
+                <div>
+                  <p class="ourelementNextSibling">This is out element</p>
+                  <p>Sibling</p>
+                  <p>Second sibling</p>
+                </div>
+              </li>
+              <li>
+                <h2>Sub sequente Sibling Selector ~</h2>
+                <p>
+                  this is almost similer to next sibling selector that in this
+                  case an element just as to follow the target element with in
+                  the same parent, Rather than to be next of target element
+                </p>
+                <p>Also called as general sibling selector</p>
+                <div>
+                  <p class="ourelementSubSequentSibling">This is out element</p>
+                  <p>Sibling</p>
+                  <p>Second sibling</p>
+                </div>
+                <div>
+                  <h1>Custome Toggle</h1>
+                  <label class="toggle" for="toggle_element">
+                    <span class="toggle_label">Our Custome Toggle swtich</span>
+                    <input
+                      type="checkbox"
+                      role="switch"
+                      id="toggle_element"
+                      class="toggle_element"
+                    />
+                    <div class="toggle__decor" aria-hidden="true">
+                      <div class="toggle__thumb">Hello</div>
+                    </div>
+                    <div class="toggle__decor" aria-hidden="true">Helo</div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <h2>Child combinator ></h2>
+                <p>
+                  Only selct direct children, but decendenct selctor will go
+                  down to herirachy
+                </p>
+
+                <div class="top_childcombinator box_childCombinator">
+                  <!-- <span>i</span> -->
+                  <p>I have no margin because I am the first child.</p>
+                  <p>
+                    I have <code>margin-top</code> because I am a
+                    <strong>next sibling</strong>.
+                  </p>
+                  <!-- <div>Helo</div>
+              <div>Hii</div> -->
+                  <p>
+                    I have a <strong>bold</strong>
+                    <em>then an emphasised bit of text</em>, which because I put
+                    <code>inline-block</code> on my emphasised text, gives us
+                    unwanted spacing.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <h2>Compount Selectors</h2>
+                <p>
+                  We can combine selctors to improvde readebilty and sepcificity
+                </p>
+                <p>A a element wich have class name can be written as</p>
+                <span>a.myclass{ color:white}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <link rel="stylesheet" href="index.css" />
+  </body>
+</html>
